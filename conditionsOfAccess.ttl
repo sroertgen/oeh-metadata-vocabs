@@ -1,10 +1,11 @@
-@base <https://w3id.org/openeduhub/vocabs/conditionsOfAccess/#> .
+@base <http://w3id.org/openeduhub/vocabs/conditionsOfAccess/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <> a skos:ConceptScheme ;
-    dct:title "Conditions of Access"@en ;
+    dct:title "Zugangsbedinungen (Login)"@de ;
+    dct:title "Conditions of Access (login)"@en ;
     dct:description "Describes conditions of access to an object."@en ;
     dct:creator "<https://wirlernenonline.de>" ;
     dct:created "2020-04-14"^^xsd:date ;

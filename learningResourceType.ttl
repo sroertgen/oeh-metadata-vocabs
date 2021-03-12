@@ -1,10 +1,10 @@
-@base <https://w3id.org/openeduhub/vocabs/learningResourceType/#> .
+@base <http://w3id.org/openeduhub/vocabs/learningResourceType/> .
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <> a skos:ConceptScheme;
-    dct:title "Typ der Ressource"@de;
+    dct:title "Typ der Lernressource"@de;
     dct:title "Learning Resource Type"@en;
     dct:description "Eine Wertelliste für Typen von Lernressourcen (Learning Resource Type), entstanden im Kontext des OpenEduHub."@de;
     dct:description "A value list for Learning Resource Type. Developed in Context of OpenEduHub."@en;
@@ -19,12 +19,13 @@
             <exploration>, <glossary>, <guide>, <audio>, <data>, <image>, 
             <map>, <model>, <photograph>, <text>, <video>, <other_asset_type>, 
             <lesson_plan>, <open_activity>, <presentation>, <project>, <reference>, 
-            <role_play>, <simulation>, <tool>, <weblog>, <web_page>, <wiki>, 
+            <role_play>, <simulation>, <teaching_module>, <tool>, <weblog>, <web_page>, <wiki>, 
             <other_web_resource>, <other>, <worksheet> .
 
 <application> a skos:Concept ;
-    skos:prefLabel "Anwendnung/Software"@de ;
+    skos:prefLabel "Anwendung/Software"@de ;
     skos:prefLabel "application"@en ;
+    skos:editorialNote "Original LOMv1.0" ;
     skos:topConceptOf <> .
 
 <assessment> a skos:Concept ;
@@ -176,6 +177,7 @@
     skos:prefLabel "Unterrichtsbaustein"@de ;
     skos:prefLabel "teaching module"@en ;
     skos:altLabel "teaching-module"@en ;
+    skos:editorialNote "Nicht in LOM-DE vorhanden"@de ;
     skos:topConceptOf <> .
 
 <tool> a skos:Concept ;
@@ -212,4 +214,3 @@
     skos:prefLabel "Arbeitsblatt"@de ;
     skos:prefLabel "worksheet"@en ;
     skos:topConceptOf <> .
-
